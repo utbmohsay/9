@@ -1,0 +1,64 @@
+article, aside, footer {
+  background-color: #ddd
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas: "header header" "nav nav" "section section " "aside aside" "footer footer ";
+  grid-gap: .5em 1em
+}
+
+@media screen and (min-width:600px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header  header" "nav  nav" "section  aside" "footer  footer";
+    grid-gap: 1em 2em
+  }
+}
+
+header {
+  grid-area: header
+}
+
+nav {
+<<<<<<< HEAD
+  background-color: white;
+  grid-area: nav;
+=======
+  background-color: #777;
+  grid-area: nav
+>>>>>>> 2a937984894881c66d98365db1a27d4d78486e18
+}
+
+section {
+  grid-area: section
+}
+
+article {
+<<<<<<< HEAD
+  background-color: black;
+=======
+>>>>>>> 2a937984894881c66d98365db1a27d4d78486e18
+  grid-area: article;
+  background-color: rgba(255, 255, 255, .5)
+}
+
+aside {
+<<<<<<< HEAD
+  background-color: black;
+=======
+>>>>>>> 2a937984894881c66d98365db1a27d4d78486e18
+  grid-area: aside;
+  background-color: rgba(255, 255, 255, .5)
+}
+
+footer {
+<<<<<<< HEAD
+  background-color: black;
+=======
+>>>>>>> 2a937984894881c66d98365db1a27d4d78486e18
+  grid-area: footer;
+  background-color: rgba(255, 255, 255, .5)
+}
